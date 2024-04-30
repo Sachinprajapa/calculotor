@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body{
+            text-align: center;
+            margin-top: 123px;
+            background-color: rgb(71, 54, 54);
+        }
+        
+        input[type="button"]
+        {
+          width:14%;
+        
+          height: 45px;
+          color:white;
+          background-color:rgb(30, 39, 30);
+          font-size: 35px;
+        }
+     input[type="text"]
+     {
+       width:57%;
+       height:35px;
+       background-color:rgb(139, 139, 130);
+       font-size: 35px;
+       
+     }
+            </style>
+    </head>
+    <body>
+    <script>
+      function key(val)
+      {
+        document.getElementById("a").value +=val;
+      }
+      function clr()
+        {
+          document.getElementById("a").value="";
+          
+        }
+        function solve()
+        {
+          var x=document.getElementById("a").value;
+          var y=eval(x);
+          document.getElementById("a").value=y;
+        }
+       
+        
+    </script>
+    
+      <tr>
+        <th class="container">
+            <input type="text"id="a">
+      </tr>
+       <br><br> 
+       <tr>
+         <th> <input type="button" value="9"onclick="key(9)"></th>
+          <th> <input type="button" value="8"onclick="key(8)"></th>
+          <th> <input type="button" value="7"onclick="key(7)"></th>
+           <th><input type="button" value="/"onclick="key('/')"></th>
+         
+       </tr><br><br>
+        <tr>
+         <th>
+           <input type="button" value="4"onclick="key(4)">
+           <input type="button" value="5"onclick="key(5)">
+           <input type="button" value="6"onclick="key(6)">
+           <input type="button" value="+"onclick="key('+')">
+         </th>
+       </tr><br><br>
+        <tr>
+         <th>
+           <input type="button" value="1"onclick="key(1)">
+           <input type="button" value="2"onclick="key(2)">
+           <input type="button" value="3"onclick="key(3)">
+           <input type="button" value="-"onclick="key('-')">
+          
+         </th>
+       </tr><br><br>
+        <tr>
+         <th>
+           <input type="button" value="0"onclick="key(0)">
+           <input type="button" value="."onclick="key('.')">
+           <input type="button" value="="onclick="solve('=')">
+           <input type="button" value="AC"onclick="clr()">
+         </th><br><br>
+        
+       </tr>
+    
+</body>
+</html>
